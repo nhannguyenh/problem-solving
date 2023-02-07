@@ -6,5 +6,6 @@ To practice and resolve the problems by using Java language
 
 ## List of problems are resolved
 
-| No  | HackerRank | LeetCode |
-|-----|------------|----------|
+| No | HackerRank                                                                                       | LeetCode |
+|---|--------------------------------------------------------------------------------------------------|----------|
+| 1 | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true) |          |
