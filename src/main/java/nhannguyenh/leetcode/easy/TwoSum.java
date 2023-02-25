@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+    private Double minTarget = Math.pow(-10, 9);
+    private Double maxTarget = Math.pow(10, 9);
+
     public int[] twoSum(int[] nums, int target) {
         if (validate(nums, target) && elementValidate(nums)) {
             Map<Integer, Integer> map = new HashMap<>();
@@ -20,17 +23,16 @@ public class TwoSum {
     }
 
     private boolean validate(int[] nums, int target) {
-        Double minTarget = Math.pow(-10, 9);
-        Double maxTarget = Math.pow(10, 9);
         boolean firstConstraint = nums.length >= 2 && nums.length <= Math.pow(10, 4);
         boolean secondConstraint = target >= minTarget.intValue() && target <= maxTarget.intValue();
         return firstConstraint && secondConstraint;
     }
 
     private boolean elementValidate(int[] nums) {
-        Double minTarget = Math.pow(-10, 9);
-        Double maxTarget = Math.pow(10, 9);
-        int result = Arrays.stream(nums).filter(element -> element <= minTarget.intValue() || element >= maxTarget.intValue()).findFirst().orElse(-1);
+        int result = Arrays.stream(nums)
+                .filter(element -> element <= minTarget.intValue() || element >= maxTarget.intValue())
+                .findFirst()
+                .orElse(-1);
         return result == -1;
     }
 }
