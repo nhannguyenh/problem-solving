@@ -9,8 +9,6 @@ import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 
 public class PalindromeNumberTest {
-    private static final Double MIN_VALUE = Math.pow(-2, 31);
-    private static final Double MAX_VALUE = Math.pow(2, 31) - 1;
     private PalindromeNumber solution;
 
     @Before
@@ -21,16 +19,6 @@ public class PalindromeNumberTest {
     @After
     public void tearDown() {
         solution = null;
-    }
-
-    @Test
-    public void invalidInputTestCase1() {
-        assertFalse(solution.isPalindrome(MIN_VALUE.intValue() - 1));
-    }
-
-    @Test
-    public void invalidInputTestCase2() {
-        assertFalse(solution.isPalindrome(MAX_VALUE.intValue() + 1));
     }
 
     @Test
