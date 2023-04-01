@@ -34,6 +34,11 @@ public class PalindromeNumberTest {
     }
 
     @Test
+    public void invalidInputTestCase3() {
+        assertFalse(solution.isPalindrome(-1));
+    }
+
+    @Test
     public void testCase1() {
         assertTrue(solution.isPalindrome(121));
     }

@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    private final Double MIN_TARGET = Math.pow(-10, 9);
-    private final Double MAX_TARGET = Math.pow(10, 9);
+    private static final Double MIN_TARGET = Math.pow(-10, 9);
+    private static final Double MAX_TARGET = Math.pow(10, 9);
 
     public int[] twoSum(int[] nums, int target) {
         if (validate(nums, target) && elementValidate(nums)) {
