@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertFalse;
 
 public class RomanToIntegerTest {
     private RomanToInteger solution;
@@ -23,27 +22,27 @@ public class RomanToIntegerTest {
 
     @Test
     public void inputLengthEqual0() {
-        assertFalse(solution.isValidInput(""));
+        assertEquals(-1, solution.romanToInt(""));
     }
 
     @Test
     public void inputLengthGreaterThan15() {
-        assertFalse(solution.isValidInput("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"));
+        assertEquals(-1 ,solution.romanToInt("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"));
     }
 
     @Test
     public void inputHasInvalidCharacter() {
-        assertFalse(solution.isValidInput("IIIAV"));
+        assertEquals(-1, solution.romanToInt("IIIAV"));
     }
 
     @Test
     public void outputEqual0() {
-        assertFalse(solution.isValidOutput(0));
+        assertEquals(-1 ,solution.romanToInt(""));
     }
 
     @Test
     public void outputGreaterThan3999() {
-        assertFalse(solution.isValidOutput(4000));
+        assertEquals(-1, solution.romanToInt("MMMM"));
     }
 
     @Test

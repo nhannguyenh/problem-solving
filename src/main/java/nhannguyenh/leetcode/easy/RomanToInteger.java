@@ -6,10 +6,11 @@ import java.util.Map;
 public class RomanToInteger {
 
     public int romanToInt(String s) {
+        int output = 0;
         Map<Character, Integer> values = generateMapValue();
-        int valueAtPreviousPosition = values.get(s.charAt(s.length() - 1));
-        int output = valueAtPreviousPosition;
         if (this.isValidInput(s)) {
+            int valueAtPreviousPosition = values.get(s.charAt(s.length() - 1));
+            output = valueAtPreviousPosition;
             for (int i = s.length() - 2; i >= 0; i--) {
                 Integer valueAtCurrentPosition = values.get(s.charAt(i));
                 if (valueAtPreviousPosition > valueAtCurrentPosition) {
@@ -23,14 +24,14 @@ public class RomanToInteger {
         return this.isValidOutput(output) ? output : -1;
     }
 
-    public boolean isValidInput(String input) {
+    private boolean isValidInput(String input) {
         if (input.length() < 1 || input.length() > 15) {
             return false;
         }
         return input.matches("[IVXLCDM]+");
     }
 
-    public boolean isValidOutput(Integer output) {
+    private boolean isValidOutput(Integer output) {
         return output >= 1 && output <= 3999;
     }
 
