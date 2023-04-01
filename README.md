@@ -6,7 +6,8 @@ To practice and resolve the data structures and algorithms problems by using Jav
 
 ## List of problems are resolved
 
-| No  | HackerRank (1)                                                                                   | LeetCode (2)                                                                                                                    |
-|-----|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| 1   | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true) | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               |
-| 2   |                                                                                                  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| No | HackerRank (1)                                                                                   | LeetCode (3)                                                                                                                    |
+|----|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 1  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true) | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               |
+| 2  |                                                                                                  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| 3  |                                                                                                  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                           |
