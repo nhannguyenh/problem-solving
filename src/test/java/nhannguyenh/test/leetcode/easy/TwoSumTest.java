@@ -27,36 +27,36 @@ public class TwoSumTest {
 
     @Test
     public void invalidArrayLengthCase2() {
-        Double size = Math.pow(10, 5);
-        int[] nums = new int[size.intValue()];
+        double size = Math.pow(10, 5);
+        int[] nums = new int[(int) size];
         assertArrayEquals(new int[]{}, solution.twoSum(nums, 10));
     }
 
     @Test
     public void invalidTargetCase1() {
         int[] nums = {2, 7, 11, 15};
-        Double target = Math.pow(-10, 9) - 1;
-        assertArrayEquals(new int[]{}, solution.twoSum(nums, target.intValue()));
+        double target = Math.pow(-10, 9) - 1;
+        assertArrayEquals(new int[]{}, solution.twoSum(nums, (int) target));
     }
 
     @Test
     public void invalidTargetCase2() {
         int[] nums = {2, 7, 11, 15};
-        Double target = Math.pow(10, 9) + 1;
-        assertArrayEquals(new int[]{}, solution.twoSum(nums, target.intValue()));
+        double target = Math.pow(10, 9) + 1;
+        assertArrayEquals(new int[]{}, solution.twoSum(nums, (int) target));
     }
 
     @Test
     public void invalidElementCase1() {
-        Double e = Math.pow(-10, 9) - 1;
-        int[] nums = {e.intValue(), 1, 2};
+        double e = Math.pow(-10, 9) - 1;
+        int[] nums = {(int) e, 1, 2};
         assertArrayEquals(new int[]{}, solution.twoSum(nums, 3));
     }
 
     @Test
     public void invalidElementCase2() {
-        Double e = Math.pow(10, 9) + 1;
-        int[] nums = {e.intValue(), 1, 2};
+        double e = Math.pow(10, 9) + 1;
+        int[] nums = {(int) e, 1, 2};
         assertArrayEquals(new int[]{}, solution.twoSum(nums, 3));
     }
 

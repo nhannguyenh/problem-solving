@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    private Double minTarget = Math.pow(-10, 9);
-    private Double maxTarget = Math.pow(10, 9);
+    private final Double MIN_TARGET = Math.pow(-10, 9);
+    private final Double MAX_TARGET = Math.pow(10, 9);
 
     public int[] twoSum(int[] nums, int target) {
         if (validate(nums, target) && elementValidate(nums)) {
@@ -24,13 +24,13 @@ public class TwoSum {
 
     private boolean validate(int[] nums, int target) {
         boolean firstConstraint = nums.length >= 2 && nums.length <= Math.pow(10, 4);
-        boolean secondConstraint = target >= minTarget.intValue() && target <= maxTarget.intValue();
+        boolean secondConstraint = target >= MIN_TARGET.intValue() && target <= MAX_TARGET.intValue();
         return firstConstraint && secondConstraint;
     }
 
     private boolean elementValidate(int[] nums) {
         int result = Arrays.stream(nums)
-                .filter(element -> element <= minTarget.intValue() || element >= maxTarget.intValue())
+                .filter(element -> element <= MIN_TARGET.intValue() || element >= MAX_TARGET.intValue())
                 .findFirst()
                 .orElse(-1);
         return result == -1;
