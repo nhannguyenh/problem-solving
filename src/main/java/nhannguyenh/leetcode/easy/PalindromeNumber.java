@@ -1,8 +1,8 @@
 package nhannguyenh.leetcode.easy;
 
 public class PalindromeNumber {
-    private final Double MIN_VALUE = Math.pow(2, -31);
-    private final Double MAX_VALUE = Math.pow(2, 31) - 1;
+    private static final Double MIN_VALUE = Math.pow(2, -31);
+    private static final Double MAX_VALUE = Math.pow(2, 31) - 1;
 
     public boolean isPalindrome(int x) {
         if (x < 0 || x < MIN_VALUE.intValue() || x > MAX_VALUE.intValue()) {
