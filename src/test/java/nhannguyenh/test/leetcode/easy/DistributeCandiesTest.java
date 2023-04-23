@@ -21,19 +21,19 @@ public class DistributeCandiesTest {
     }
 
     @Test
-    public void invalidLengthTestCase1() {
+    public void testLengthOdd() {
         int[] candyType = {1, 2, 3};
         assertEquals(-1, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void invalidLengthTestCase2() {
+    public void testLengthGreaterThan10000() {
         int[] candyType = new int[10001];
         assertEquals(-1, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void invalidLengthTestCase3() {
+    public void testLengthLessThan2() {
         int[] candyType = new int[1];
         assertEquals(-1, solution.distributeCandies(candyType));
     }
