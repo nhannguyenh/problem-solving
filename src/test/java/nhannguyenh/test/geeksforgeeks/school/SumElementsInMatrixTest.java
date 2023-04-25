@@ -1,34 +1,40 @@
 package nhannguyenh.test.geeksforgeeks.school;
 
 import nhannguyenh.geeksforgeeks.school.SumElementsInMatrix;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import java.security.InvalidParameterException;
 
-import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class SumElementsInMatrixTest {
+class SumElementsInMatrixTest {
     private static final String INVALID_MATRIX_EXCEPTION_MESSAGE = "The matrix is invalid";
     private static final String INVALID_MATRIX_ELEMENT_EXCEPTION_MESSAGE = "The matrix element is invalid";
     private SumElementsInMatrix solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new SumElementsInMatrix();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
-    @Test
-    public void rowLessThan1() {
-        int row = 0;
-        int column = 1;
+    @ParameterizedTest
+    @CsvSource({
+            "0, 1",
+            "1001, 1",
+            "1, 0",
+            "1, 1001"
+    })
+    void givenInvalidMatrixSize_thenThrowException(int row, int column) {
         Throwable exception = assertThrows(
                 InvalidParameterException.class, () -> {
                     solution.sumOfMatrix(row, column, new int[row][column]);
@@ -38,43 +44,7 @@ public class SumElementsInMatrixTest {
     }
 
     @Test
-    public void rowGreaterThan1000() {
-        int row = 1001;
-        int column = 1;
-        Throwable exception = assertThrows(
-                InvalidParameterException.class, () -> {
-                    solution.sumOfMatrix(row, column, new int[row][column]);
-                }
-        );
-        assertEquals(INVALID_MATRIX_EXCEPTION_MESSAGE, exception.getMessage());
-    }
-
-    @Test
-    public void columnLessThan1() {
-        int row = 1;
-        int column = 0;
-        Throwable exception = assertThrows(
-                InvalidParameterException.class, () -> {
-                    solution.sumOfMatrix(row, column, new int[row][column]);
-                }
-        );
-        assertEquals(INVALID_MATRIX_EXCEPTION_MESSAGE, exception.getMessage());
-    }
-
-    @Test
-    public void columnGreaterThan1000() {
-        int row = 1;
-        int column = 1001;
-        Throwable exception = assertThrows(
-                InvalidParameterException.class, () -> {
-                    solution.sumOfMatrix(row, column, new int[row][column]);
-                }
-        );
-        assertEquals(INVALID_MATRIX_EXCEPTION_MESSAGE, exception.getMessage());
-    }
-
-    @Test
-    public void matrixElementLessThanMinus1000() {
+    void givenMatrixElementLessThanMinus1000_thenThrowException() {
         int[][] grid = {
                 {-1001, 0, 1},
                 {-8, 9, -2}
@@ -88,7 +58,7 @@ public class SumElementsInMatrixTest {
     }
 
     @Test
-    public void matrixElementGreaterThan1000() {
+    void givenMatrixElementGreaterThan1000_thenThrowException() {
         int[][] grid = {
                 {-1, 0, 1001},
                 {-8, 9, -2}
@@ -102,7 +72,7 @@ public class SumElementsInMatrixTest {
     }
 
     @Test
-    public void validTestCase1() {
+    void givenValidMatrixElementsCase1_thenReturn1() {
         int[][] grid = {
                 {1, 0, 1},
                 {-8, 9, -2}
@@ -111,7 +81,7 @@ public class SumElementsInMatrixTest {
     }
 
     @Test
-    public void validTestCase2() {
+    void givenValidMatrixElementsCase2_thenReturn0() {
         int[][] grid = {
                 {1, 0, 1, 0, 1},
                 {0, 1, 0, 1, 0},

@@ -44,7 +44,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Run maven unit test
-        run: mvn test
+        run: mvn test -Pcoverage
       - name: Unit test results
         uses: dorny/test-reporter@v1
         if: always()
