@@ -1,87 +1,87 @@
 package nhannguyenh.test.leetcode.easy;
 
 import nhannguyenh.leetcode.easy.FibonacciNumber;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FibonacciNumberTest {
+class FibonacciNumberTest {
     private FibonacciNumber solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new FibonacciNumber();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
     @Test
-    public void inputLessThan0() {
+    void givenInputLessThan0_shouldReturnMinus1() {
         assertEquals(-1, solution.fib(-1));
     }
 
     @Test
-    public void inputGreaterThan30() {
+    void givenInputGreaterThan30_shouldReturnMinus1() {
         assertEquals(-1, solution.fib(31));
     }
 
     @Test
-    public void inputEqualTo0() {
+    void givenInputEqualTo0_shouldReturn0() {
         assertEquals(0, solution.fib(0));
     }
 
     @Test
-    public void inputEqualTo1() {
+    void givenInputEqualTo1_shouldReturn1() {
         assertEquals(1, solution.fib(1));
     }
 
     @Test
-    public void inputEqualTo2() {
+    void givenInputEqualTo2_shouldReturn1() {
         assertEquals(1, solution.fib(2));
     }
 
     @Test
-    public void inputEqualTo3() {
+    void givenInputEqualTo3_shouldReturn2() {
         assertEquals(2, solution.fib(3));
     }
 
     @Test
-    public void inputEqualTo4() {
+    void givenInputEqualTo4_shouldReturn3() {
         assertEquals(3, solution.fib(4));
     }
 
     @Test
-    public void inputEqualTo5() {
+    void givenInputEqualTo5_shouldReturn5() {
         assertEquals(5, solution.fib(5));
     }
 
     @Test
-    public void inputEqualTo6() {
+    void givenInputEqualTo6_shouldReturn8() {
         assertEquals(8, solution.fib(6));
     }
 
     @Test
-    public void inputEqualTo7() {
+    void givenInputEqualTo7_shouldReturn13() {
         assertEquals(13, solution.fib(7));
     }
 
     @Test
-    public void inputEqualTo8() {
+    void givenInputEqualTo8_shouldReturn21() {
         assertEquals(21, solution.fib(8));
     }
 
     @Test
-    public void inputEqualTo9() {
+    void givenInputEqualTo9_shouldReturn34() {
         assertEquals(34, solution.fib(9));
     }
 
     @Test
-    public void inputEqualTo10() {
+    void givenInputEqualTo10_shouldReturn55() {
         assertEquals(55, solution.fib(10));
     }
 }

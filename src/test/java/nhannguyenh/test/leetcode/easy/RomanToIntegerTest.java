@@ -1,62 +1,62 @@
 package nhannguyenh.test.leetcode.easy;
 
 import nhannguyenh.leetcode.easy.RomanToInteger;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RomanToIntegerTest {
+class RomanToIntegerTest {
     private RomanToInteger solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new RomanToInteger();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
     @Test
-    public void inputLengthEqual0() {
+    void inputLengthEqual0_thenReturnMinus1() {
         assertEquals(-1, solution.romanToInt(""));
     }
 
     @Test
-    public void inputLengthGreaterThan15() {
+    void inputLengthGreaterThan15_thenReturnMinus1() {
         assertEquals(-1 ,solution.romanToInt("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"));
     }
 
     @Test
-    public void inputHasInvalidCharacter() {
+    void inputHasInvalidCharacter_thenReturnMinus1() {
         assertEquals(-1, solution.romanToInt("IIIAV"));
     }
 
     @Test
-    public void outputEqual0() {
+    void outputEqual0_thenReturnMinus1() {
         assertEquals(-1 ,solution.romanToInt(""));
     }
 
     @Test
-    public void outputGreaterThan3999() {
+    void outputGreaterThan3999_thenReturnMinus1() {
         assertEquals(-1, solution.romanToInt("MMMM"));
     }
 
     @Test
-    public void outputIs3() {
+    void givenIII_thenRetun3() {
         assertEquals(3, solution.romanToInt("III"));
     }
 
     @Test
-    public void outputIs58() {
+    void givenLVIII_thenReturn58() {
         assertEquals(58, solution.romanToInt("LVIII"));
     }
 
     @Test
-    public void outputIs1994() {
+    void givenMCMXCIV_thenReturn1994() {
         assertEquals(1994, solution.romanToInt("MCMXCIV"));
     }
 }

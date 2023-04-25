@@ -1,52 +1,52 @@
 package nhannguyenh.test.geeksforgeeks.school;
 
 import nhannguyenh.geeksforgeeks.school.TheDiceProblem;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TheDiceProblemTest {
+class TheDiceProblemTest {
     private TheDiceProblem solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new TheDiceProblem();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
     @Test
-    public void testOppositeFaceOf1() {
+    void givenFace1_shouldReturn6() {
         assertEquals(6, solution.oppositeFaceOfDice(1));
     }
 
     @Test
-    public void testOppositeFaceOf2() {
+    void givenFace2_shouldReturn5() {
         assertEquals(5, solution.oppositeFaceOfDice(2));
     }
 
     @Test
-    public void testOppositeFaceOf3() {
+    void givenFace3_shouldReturn4() {
         assertEquals(4, solution.oppositeFaceOfDice(3));
     }
 
     @Test
-    public void testOppositeFaceOf4() {
+    void givenFace4_shouldReturn3() {
         assertEquals(3, solution.oppositeFaceOfDice(4));
     }
 
     @Test
-    public void testOppositeFaceOf5() {
+    void givenFace5_shouldReturn2() {
         assertEquals(2, solution.oppositeFaceOfDice(5));
     }
 
     @Test
-    public void testOppositeFaceOf6() {
+    void givenFace6_shouldReturn1() {
         assertEquals(1, solution.oppositeFaceOfDice(6));
     }
 }

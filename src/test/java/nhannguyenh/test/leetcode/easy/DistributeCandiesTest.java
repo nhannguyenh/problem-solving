@@ -1,57 +1,57 @@
 package nhannguyenh.test.leetcode.easy;
 
 import nhannguyenh.leetcode.easy.DistributeCandies;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DistributeCandiesTest {
+class DistributeCandiesTest {
     private DistributeCandies solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new DistributeCandies();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
     @Test
-    public void testLengthOdd() {
+    void givenOddLength_shouldReturnMinus1() {
         int[] candyType = {1, 2, 3};
         assertEquals(-1, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void testLengthGreaterThan10000() {
+    void givenLengthGreaterThan10000__shouldReturnMinus1() {
         int[] candyType = new int[10001];
         assertEquals(-1, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void testLengthLessThan2() {
+    void givenLengthLessThan2_shouldReturnMinus1() {
         int[] candyType = new int[1];
         assertEquals(-1, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void validTestCase1() {
+    void given3CandyTypes_shouldReturnNumberOfCandy() {
         int[] candyType = {1, 1, 2, 2, 3, 3};
         assertEquals(3, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void validTestCase2() {
+    void given2CandyTypes_shouldReturnNumberOfCandy() {
         int[] candyType = {1, 1, 2, 3};
         assertEquals(2, solution.distributeCandies(candyType));
     }
 
     @Test
-    public void validTestCase3() {
+    void given1CandyType_shouldReturnNumberOfCandy() {
         int[] candyType = {6, 6, 6, 6};
         assertEquals(1, solution.distributeCandies(candyType));
     }

@@ -12,7 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>4.13.2</junit.version>
+        <junit.jupiter.params.version>5.9.2</junit.jupiter.params.version>
         <jacoco.version>0.8.7</jacoco.version>
         <sonar.organization>nhannguyenh</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
@@ -21,9 +21,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.params.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -61,5 +61,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>

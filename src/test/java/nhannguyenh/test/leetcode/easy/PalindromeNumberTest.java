@@ -1,48 +1,48 @@
 package nhannguyenh.test.leetcode.easy;
 
 import nhannguyenh.leetcode.easy.PalindromeNumber;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertFalse;
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PalindromeNumberTest {
+class PalindromeNumberTest {
     private PalindromeNumber solution;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution = new PalindromeNumber();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         solution = null;
     }
 
     @Test
-    public void testCase1() {
+    void given121_thenReturnTrue() {
         assertTrue(solution.isPalindrome(121));
     }
 
     @Test
-    public void testCase2() {
+    void givenMinus121_thenReturnFalse() {
         assertFalse(solution.isPalindrome(-121));
     }
 
     @Test
-    public void testCase3() {
+    void given10_thenReturnFalse() {
         assertFalse(solution.isPalindrome(10));
     }
 
     @Test
-    public void testCase4() {
+    void given11_thenReturnTrue() {
         assertTrue(solution.isPalindrome(11));
     }
 
     @Test
-    public void testCase5() {
+    void given1_thenReturnTrue() {
         assertTrue(solution.isPalindrome(1));
     }
 }
