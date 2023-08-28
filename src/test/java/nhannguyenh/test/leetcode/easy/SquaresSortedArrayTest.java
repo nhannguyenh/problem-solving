@@ -21,7 +21,7 @@ class SquaresSortedArrayTest {
     }
 
     @Test
-    void givenEmptyArray_thenReturnException() {
+    void giveEmptyArray_thenReturnException() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             solution.sortedSquares(new int[]{});
         });
@@ -30,7 +30,7 @@ class SquaresSortedArrayTest {
     }
 
     @Test
-    void givenArrayHasLengthGreaterThan104_thenReturnException() {
+    void giveArrayHasLengthGreaterThan104_thenReturnException() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             solution.sortedSquares(new int[]{105});
         });
