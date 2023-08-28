@@ -32,6 +32,24 @@ class SquaresSortedArrayTest {
     @Test
     void giveArrayHasLengthGreaterThan104_thenReturnException() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            solution.sortedSquares(new int[105]);
+        });
+
+        assertEquals("Input array is not valid", exception.getMessage());
+    }
+
+    @Test
+    void giveArrayHasElementLessThanMinus104_thenReturnException() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            solution.sortedSquares(new int[]{-105});
+        });
+
+        assertEquals(String.format("%d is not valid value", -105), exception.getMessage());
+    }
+
+    @Test
+    void giveArrayHasElementGreaterThan104_thenReturnException() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             solution.sortedSquares(new int[]{105});
         });
 
