@@ -28,7 +28,7 @@ jobs:
         run: mvn clean install -DskipTests
 
   test-result:
-    name: Test report
+    name: Test
     needs:
       - build
     runs-on: ubuntu-latest
@@ -45,11 +45,11 @@ jobs:
           cache: maven
       - name: Run maven unit test
         run: mvn test -Pcoverage
-      - name: Unit test results
+      - name: Test report
         uses: dorny/test-reporter@v1
         if: always()
         with:
-          name: Unit Test Results
+          name: Test report
           path: "**/surefire-reports/*.xml"
           reporter: java-junit
 
