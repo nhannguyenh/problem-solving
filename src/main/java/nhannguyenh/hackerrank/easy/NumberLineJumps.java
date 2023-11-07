@@ -5,8 +5,7 @@ public class NumberLineJumps {
     public static final String NO = "NO";
 
     public String kangaroo(int x1, int v1, int x2, int v2) {
-        if (validatePosition(x1) && validatePosition(x2) &&
-                validateJumpDistance(v1) && validateJumpDistance(v2)) {
+        if (validateInitPositions(x1, x2) && validateJumpDistances(v1, v2)) {
             if (x2 > x1 && v2 > v1) {
                 return NO;
             } else {
@@ -20,6 +19,14 @@ public class NumberLineJumps {
             }
         }
         return NO;
+    }
+
+    private boolean validateInitPositions(int firstPosition, int secondPosition) {
+        return validatePosition(firstPosition) && validatePosition(secondPosition);
+    }
+
+    private boolean validateJumpDistances(int firstDistance, int secondDistance) {
+        return validateJumpDistance(firstDistance) && validateJumpDistance(secondDistance);
     }
 
     private boolean validatePosition(int position) {
