@@ -21,8 +21,53 @@ class NumberLineJumpsTest {
     }
 
     @Test
+    void giveX1LessThan0_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(-1, 1, 1, 2));
+    }
+
+    @Test
+    void giveX1GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(10001, 1, 1, 2));
+    }
+
+    @Test
+    void giveX2LessThan0_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(2, 2, -1, 2));
+    }
+
+    @Test
+    void giveX2GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(2, 10001, 1, 2));
+    }
+
+    @Test
+    void giveV1LessThan1_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 0, 1, 2));
+    }
+
+    @Test
+    void giveV1GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 10001, 1, 2));
+    }
+
+    @Test
+    void giveV2LessThan1_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 1, 1, 0));
+    }
+
+    @Test
+    void giveV2GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 2, 1, 10001));
+    }
+
+    @Test
     void give2112_thenReturnYes() {
         assertEquals(NumberLineJumps.YES, solution.kangaroo(2, 1, 1, 2));
+    }
+
+    @Test
+    void giveX1LessThanX2AndV1LessThanV2_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(0, 3, 2, 4));
     }
 
     @Test
@@ -36,47 +81,7 @@ class NumberLineJumpsTest {
     }
 
     @Test
-    void giveX1LessThan0_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(-1, 1, 1, 2));
-    }
-
-    @Test
-    void giveX2LessThan0_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(2, -1, 1, 2));
-    }
-
-    @Test
-    void giveX1GreaterThan10000_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(10001, 1, 1, 2));
-    }
-
-    @Test
-    void giveV1LessThan1_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 0, 1, 2));
-    }
-
-    @Test
-    void giveV2LessThan1_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 1, 1, 0));
-    }
-
-    @Test
-    void giveV1GreaterThan10000_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 10001, 1, 2));
-    }
-
-    @Test
-    void giveV2GreaterThan10000_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 2, 1, 10001));
-    }
-
-    @Test
-    void giveX2GreaterThan10000_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(2, 10001, 1, 2));
-    }
-
-    @Test
-    void giveX1LessThanX2AndV1LessThanV2_thenReturnNo() {
-        assertEquals(NumberLineJumps.NO, solution.kangaroo(0, 3, 2, 4));
+    void give1522_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 5, 2, 2));
     }
 }
