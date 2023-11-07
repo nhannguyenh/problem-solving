@@ -51,6 +51,26 @@ class NumberLineJumpsTest {
     }
 
     @Test
+    void giveV1LessThan1_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 0, 1, 2));
+    }
+
+    @Test
+    void giveV2LessThan1_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 1, 1, 0));
+    }
+
+    @Test
+    void giveV1GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 10001, 1, 2));
+    }
+
+    @Test
+    void giveV2GreaterThan10000_thenReturnNo() {
+        assertEquals(NumberLineJumps.NO, solution.kangaroo(1, 2, 1, 10001));
+    }
+
+    @Test
     void giveX2GreaterThan10000_thenReturnNo() {
         assertEquals(NumberLineJumps.NO, solution.kangaroo(2, 10001, 1, 2));
     }
