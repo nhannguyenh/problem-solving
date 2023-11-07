@@ -14,12 +14,13 @@ To practice and resolve the data structures and algorithms problems by using Jav
 | 3  | [The dice problem](https://practice.geeksforgeeks.org/problems/the-dice-problem2316/1?page=1&status[]=solved&sortBy=submissions)                       |   School   |
 | 4  | [Subarray with given sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1?page=1&sortBy=submissions)                  |    Easy    |
 
-### HackerRank (3)
+### HackerRank (4)
 | No | Title                                                                                                | Difficulty |
 |----|------------------------------------------------------------------------------------------------------|:----------:|
 | 1  | [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true)     |    Easy    |
-| 2  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true) |    Easy    |
-| 3  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)     |    Easy    |
+| 2  | [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem?isFullScreen=true)        |    Easy    |
+| 3  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true) |    Easy    |
+| 4  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)     |    Easy    |
 
 ### LeetCode (7)
 | No | Title                                                                                                                           | Difficulty |
