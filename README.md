@@ -14,16 +14,17 @@ To practice and resolve the data structures and algorithms problems by using Jav
 | 3  | [The dice problem](https://practice.geeksforgeeks.org/problems/the-dice-problem2316/1?page=1&status[]=solved&sortBy=submissions)                       |   School   |
 | 4  | [Subarray with given sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1?page=1&sortBy=submissions)                  |    Easy    |
 
-### HackerRank (7)
-| No | Title                                                                                                | Difficulty |
-|----|------------------------------------------------------------------------------------------------------|:----------:|
-| 1  | [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true) |    Easy    |
-| 2  | [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true)     |    Easy    |
-| 3  | [Grading Students](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)          |    Easy    |
-| 4  | [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem?isFullScreen=true)        |    Easy    |
-| 5  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true) |    Easy    |
-| 6  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)     |    Easy    |
-| 7  | [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true)   |    Easy    |
+### HackerRank (8)
+| No | Title                                                                                                          | Difficulty |
+|----|----------------------------------------------------------------------------------------------------------------|:----------:|
+| 1  | [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true)           |    Easy    |
+| 2  | [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true)               |    Easy    |
+| 3  | [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true) |    Easy    |
+| 4  | [Grading Students](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)                    |    Easy    |
+| 5  | [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem?isFullScreen=true)                  |    Easy    |
+| 6  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true)           |    Easy    |
+| 7  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)               |    Easy    |
+| 8  | [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true)             |    Easy    |
 
 ### LeetCode (7)
 | No | Title                                                                                                                           | Difficulty |
