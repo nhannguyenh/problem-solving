@@ -14,7 +14,7 @@ To practice and resolve the data structures and algorithms problems by using Jav
 | 3  | [The dice problem](https://practice.geeksforgeeks.org/problems/the-dice-problem2316/1?page=1&status[]=solved&sortBy=submissions)                       |   School   |
 | 4  | [Subarray with given sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1?page=1&sortBy=submissions)                  |    Easy    |
 
-### HackerRank (10)
+### HackerRank (11)
 | No | Title                                                                                                          | Difficulty |
 |----|----------------------------------------------------------------------------------------------------------------|:----------:|
 | 1  | [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true)           |    Easy    |
@@ -23,10 +23,11 @@ To practice and resolve the data structures and algorithms problems by using Jav
 | 4  | [Grading Students](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)                    |    Easy    |
 | 5  | [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true)                   |    Easy    |
 | 6  | [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem?isFullScreen=true)                  |    Easy    |
-| 7  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true)           |    Easy    |
-| 8  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)               |    Easy    |
-| 9  | [Staircase](https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true)                         |    Easy    |
-| 10 | [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true)             |    Easy    |
+| 7  | [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true)                       |    Easy    |
+| 8  | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true)           |    Easy    |
+| 9  | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true)               |    Easy    |
+| 10 | [Staircase](https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true)                         |    Easy    |
+| 11 | [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true)             |    Easy    |
 
 ### LeetCode (7)
 | No | Title                                                                                                                           | Difficulty |
